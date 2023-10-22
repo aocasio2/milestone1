@@ -3,14 +3,14 @@ List_options = int(input(" Please choose your option from the list below: \n(1) 
 if List_options == 1:
     print("You picked: Learn Python")
 elif List_options == 2:
-    print("You picked Java")
+    print("You picked: Learn Java")
 elif List_options == 3:
-    print("You picked swimming ")
+    print("You picked: Go swimming ")
 elif List_options == 4:
-    print("You picked Have dinner")
+    print("You picked: Have dinner")
 elif List_options == 5:
-    print("You picked Go to bed")
+    print("You picked: Go to bed")
 elif List_options == 0:
-    print("You picked exit")
+    print("You picked: exit")
 else:
     print("Not valid")
