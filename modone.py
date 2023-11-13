@@ -8,8 +8,6 @@ def introduction(name):
     print("Scene \nThief is walking around the snow trying to get a place that is not cold.")
     print("Player actions \n-Just walking, walking on uneven snow (take 1 damage of cold)\n- Nears a tall snowy mountain-Cannot go right through\n- elects to turn around it (take 1 damage of cold))")
 
-
-
 def main():
     user_name = get_user_name()
     introduction(user_name)
