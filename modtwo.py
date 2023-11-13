@@ -3,7 +3,6 @@ import modone
 mod1.get_user_name()
 
 
-
 def introduction2(name):
     print(f" {name}! Intro \nEven in the cold there exist creatures that thrive in it. seems that they are not very keen on visitors.")
     print("Scene \nNearing the other side of the detour starts hearing un natural noises. Slowly turn to see dire wolfs")
@@ -29,5 +28,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
