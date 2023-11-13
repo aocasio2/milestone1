@@ -12,6 +12,5 @@ def main():
     user_name = get_user_name()
     introduction(user_name)
 
-
 if __name__ == "__main__":
     main()
