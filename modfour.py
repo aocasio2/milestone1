@@ -1,9 +1,6 @@
 import mod1
 mod1.get_user_name()
 
-
-
-
 def FinalChapterIntr(name):
     print(f"{name}! Intro \n previously after finding yourself outmatched a villager helped you in your time of need. you contemplate what to do")
     print(f" {name}! Scene  \n After some days in the village you figure that you have a decision to make to stay or to go ")
@@ -29,11 +26,9 @@ def yourDecision():
         print(" there is something about walking aimlessly at night , yet with every step you walk with purpose")
         print("You know deep down that you cant let this go. the adventure keeps you alive")
         # Decision time one last time
-
-
+        
         print(f" {name}! Make the call ")
         print("1. Stay at the village")
-
 
         user_choice = input("Type 1 for choice 1")
 
