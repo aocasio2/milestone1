@@ -1,0 +1,88 @@
+label start:
+# Prompt the user for the main character's name
+$ name = renpy.input("Enter the name of the main character:")
+
+# Start of Chapter 1
+scene black
+
+# Display narrator's lines for Chapter 1
+"Narrator" "I am walking on snow that never seems to end."
+"Narrator" "The cold winds howl at you as if to envelop you more in its domain."
+"Narrator" "A thief is walking around the snow trying to find a place that is not cold."
+"Narrator" "Just walking, walking on uneven snow."
+"Narrator" "He nears a tall snowy mountain, cannot go right through, elects to turn around it."
+
+# End of Chapter 1
+jump chapter_1_end
+
+label chapter_1_end:
+    scene black
+    "This is the end of Chapter 1."
+
+    
+    label level2:
+
+    # Start of Chapter 2
+    scene black
+    "Narrator" "Even in the cold, there exist creatures that thrive in it. It seems that they are not very keen on visitors."
+    "Narrator" "Nearing the other side of the detour starts hearing unnatural noises. Slowly turn to see dire wolves."
+    "Narrator" "Move closer to figure out what they are doing."
+    "Narrator" "See what would have been a small campsite."
+
+    # Present choices to the player for Chapter 2
+    menu:
+        "Run away":
+            jump chapter_2_survived
+        "Face head on":
+            "You died."
+            jump start
+
+label chapter_2_survived:
+    scene black
+    "You survived but are gravely wounded."
+
+    # End of Chapter 2
+    jump chapter_2_end
+
+label chapter_2_end:
+    scene black
+    "This is the end of Chapter 2."
+
+   
+    label level3:
+        scene black
+        "Narrator" "Our Hero wakes up in a house he has never seen before"
+        "[name]" "Where am I"
+        "NPC" "You face first in the ground when I found you."
+        "NPC" "You should stay and rest for a while."
+        "[name]" "I can't stay here."
+        "NPC" "Don't move too much"
+        "[name]" "ARRRGGG"
+        "NPC" "What I tell ya"
+        "[name]" "Fine"
+
+        # Present choices to the player for Chapter 3
+        menu:
+            "Move freely":
+                "You died"
+                jump start
+            "Listen to NPC":
+                "You decide to stay put"
+                jump decide
+
+
+
+label decide:
+    scene black
+    "Narrator" "our traveler stays in the village but for how long"
+    "Narrator" "Something unexpected happens."
+
+
+    jump chapter_3_end
+
+label chapter_3_end:
+    scene black
+    "This is the end of Chapter 3."
+
+
+    return
